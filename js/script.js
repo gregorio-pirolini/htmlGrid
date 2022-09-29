@@ -330,28 +330,47 @@ pixGallerie.forEach((element) => {});
 //texts.forEach((element) => {});
 //!Place SIDEBAR
 //!
-
-//!  SSSSS  IIIII DDDDD   EEEEEEE BBBBB     AAA   RRRRRR
-//! SS       III  DD  DD  EE      BB   B   AAAAA  RR   RR
-//!  SSSSS   III  DD   DD EEEEE   BBBBBB  AA   AA RRRRRR
-//!      SS  III  DD   DD EE      BB   BB AAAAAAA RR  RR
-//!  SSSSS  IIIII DDDDDD  EEEEEEE BBBBBB  AA   AA RR   RR
+// pix: "alienAbduction.jpg",
+//     caption: "alienAbduction",
+//     text: "Alien abduction narratives sometimes allege contact with reptilian creatures. One of the earliest reports was that of Ashland, Nebraska police officer Herbert Schirmer, who under hypnosis recalled being taken aboard a UFO in 1967 by humanoid beings with a slightly reptilian appearance, who wore a 'winged serpent' emblem on the left side of their chests. Skeptics consider his claims to be a hoax",
+//     title:
+//!  SSSSS  IIIII DDDDD   EEEEEEE BBBBB      AAA    RRRRRR
+//! SS       III  DD  DD  EE      BB   B    AAAAA   RR   RR
+//!  SSSSS   III  DD   DD EEEEE   BBBBBB   AA   AA  RRRRRR
+//!      SS  III  DD   DD EE      BB   BB  AAAAAAA  RR  RR
+//!  SSSSS  IIIII DDDDDD  EEEEEEE BBBBBB  AA     AA RR   RR
+const aside = document.querySelector("aside");
 asideContent.forEach((element) => {
   let grid_container_section = document.createElement("div");
   grid_container_section.className = "grid_container_section";
 
-  let grid_container_section_item = document.createElement("div");
-  grid_container_section_item.className = "grid_container_section_item";
+  let grid_container_section_item1 = document.createElement("div");
+  grid_container_section_item1.className = "grid_container_section_item";
 
-  let title = element.title;
-  let caption = element.caption;
-  let text = element.text;
-  let pix = element.text;
+  let grid_container_section_item2 = document.createElement("div");
+  grid_container_section_item2.className = "grid_container_section_item";
 
-  grid_container_section_item.innerHTML = "title";
-  grid_container_section_item.appendChild = "pix";
-  grid_container_section_item.appendChild = "caption";
-  grid_container_section.appendChild("title");
+  let grid_container_section_item3 = document.createElement("div");
+  grid_container_section_item3.className = "grid_container_section_item";
+
+  //title
+
+  let title = document.createTextNode(element.title);
+  grid_container_section_item1.appendChild(title);
+  grid_container_section.appendChild(grid_container_section_item1);
+
+  //pix
+  let pix = document.createElement("img");
+  pix.src = "pix/" + element.pix;
+  pix.alt = element.caption;
+
+  grid_container_section_item2.appendChild(pix);
+  grid_container_section.appendChild(grid_container_section_item2);
+
+  grid_container_section_item3.innerHTML = "element.text";
+  grid_container_section.appendChild(grid_container_section_item3);
+
+  aside.appendChild(grid_container_section);
 }); // pix  caption  text  title
 
 //!Place videos
