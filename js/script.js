@@ -177,16 +177,16 @@ const asideContent = [
     title: "Alien abduction",
   },
   {
-    pix: "reptilian.jpg",
+    pix: "reptilian.jpeg",
     caption: "reptilians humans comparaisons",
     text: "Reptilians – also called reptoids, archons, reptiloids, saurians, or draconians  – are supposed reptilian humanoids, which play a prominent role in fantasy, science fiction, ufology, and conspiracy theories. The idea of reptilians was popularised by David Icke, a conspiracy theorist who claims shapeshifting reptilian aliens control Earth by taking on human form and gaining political power to manipulate human societies. Icke has stated on multiple occasions that many world leaders are, or are possessed by, so-called reptilians.",
-    title: "Alien abduction",
+    title: "reptilians humans",
   },
   {
     pix: "ufo.jpg",
     caption: "Fermi-Paradoxon",
     text: `Das Fermi-Paradoxon ist eine Bezeichnung für einen Gedankengang des Physikers Enrico Fermi aus dem Jahr 1950. Fermi ging davon aus, dass es extraterrestrische Intelligenz gibt, die technisch hochentwickelte Zivilisationen über Millionen von Jahren aufrechterhalten kann. In dieser Zeitspanne sollte es mittels interstellarer Raumfahrt möglich sein, die gesamte Galaxie zu kolonisieren – und der Wahrscheinlichkeit nach sollte dies bereits geschehen sein. Dass dennoch die Suche nach den Spuren von außerirdischem Leben bisher erfolglos blieb, erschien ihm paradox und als Hinweis darauf, entweder die Annahmen oder die Beobachtungen zu hinterfragen.`,
-    title: "Alien abduction",
+    title: "Fermi Paradoxon",
   },
 ];
 
@@ -348,15 +348,17 @@ asideContent.forEach((element) => {
   grid_container_section_item1.className = "grid_container_section_item";
 
   let grid_container_section_item2 = document.createElement("div");
-  grid_container_section_item2.className = "grid_container_section_item";
+  grid_container_section_item2.className = "grid_container_section_item fold";
 
   let grid_container_section_item3 = document.createElement("div");
-  grid_container_section_item3.className = "grid_container_section_item";
+  grid_container_section_item3.className = "grid_container_section_item fold";
 
   //title
-
+  let h4 = document.createElement("h4");
   let title = document.createTextNode(element.title);
-  grid_container_section_item1.appendChild(title);
+
+  h4.appendChild(title);
+  grid_container_section_item1.appendChild(h4);
   grid_container_section.appendChild(grid_container_section_item1);
 
   //pix
@@ -367,7 +369,11 @@ asideContent.forEach((element) => {
   grid_container_section_item2.appendChild(pix);
   grid_container_section.appendChild(grid_container_section_item2);
 
-  grid_container_section_item3.innerHTML = "element.text";
+  let p = document.createElement("p");
+  let text = document.createTextNode(element.text.substring(0, 150) + "...");
+  p.appendChild(text);
+  grid_container_section_item3.appendChild(p);
+
   grid_container_section.appendChild(grid_container_section_item3);
 
   aside.appendChild(grid_container_section);

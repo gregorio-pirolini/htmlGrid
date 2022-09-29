@@ -1,4 +1,10 @@
 @font-face {
   font-family: "header";
-  src: url("../fonts/C_A_Garrutas_font.ttf") format("truetype");
+  src: url("../fonts/baronKuffner.eot");
+  src: url("../fonts/baronKuffner.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/baronKuffner.woff") format("woff"),
+    url("../fonts/baronKuffner.ttf") format("truetype"),
+    url("../fonts/baronKuffner.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
