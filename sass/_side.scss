@@ -8,6 +8,7 @@ aside {
   }
 
   .grid_container_section {
+    display: grid;
     grid: auto / auto;
     grid-gap: 0;
     background-color: #2196f3;
@@ -19,9 +20,55 @@ aside {
     text-align: center;
     padding: 0;
   }
-  @media (min-width: 320px) {
-    aside {
-      grid: auto/auto auto;
+  .img {
+    width: calc(100%-50%);
+  }
+
+  .fold {
+    grid-row-start: 1;
+    grid-row-end: auto;
+    grid-column-start: 1;
+    grid-column-end: auto;
+  }
+}
+@media (min-width: 320px) {
+  aside {
+    grid: auto/auto auto;
+
+    .fold {
+      grid-area: 1 / span 2;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  aside {
+    grid: auto/auto;
+
+    .fold {
+      grid-row-start: 1;
+      grid-row-end: auto;
+      grid-column-start: 1;
+      grid-column-end: auto;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  aside {
+    .fold {
+      grid-area: 1 / span 2;
+    }
+  }
+}
+@media (min-width: 1366px) {
+  aside {
+    grid: auto/auto auto;
+    .fold {
+      grid-row-start: 1;
+      grid-row-end: auto;
+      grid-column-start: 1;
+      grid-column-end: auto;
     }
   }
 }

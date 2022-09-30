@@ -345,13 +345,13 @@ asideContent.forEach((element) => {
   grid_container_section.className = "grid_container_section";
 
   let grid_container_section_item1 = document.createElement("div");
-  grid_container_section_item1.className = "grid_container_section_item";
+  grid_container_section_item1.className = "grid_container_section_item fold";
 
   let grid_container_section_item2 = document.createElement("div");
-  grid_container_section_item2.className = "grid_container_section_item fold";
+  grid_container_section_item2.className = "grid_container_section_item img";
 
   let grid_container_section_item3 = document.createElement("div");
-  grid_container_section_item3.className = "grid_container_section_item fold";
+  grid_container_section_item3.className = "grid_container_section_item";
 
   //title
   let h4 = document.createElement("h4");
@@ -433,24 +433,24 @@ videos.forEach((element) => {
 //!  \___\___/|_| |_| |_| .__/ \___/|_| |_|\___|_| |_|\__|___/
 //!                     | |
 //!                     |_|
-components.forEach((element) => {
-  let section = document.createElement("section");
-  let gridContainer = document.createElement("div");
-  gridContainer.className = "grid-container";
-  for (const [key, value] of Object.entries(element)) {
-    let gridItem = document.createElement("div");
-    let klassName;
-    key == "pix" ? (klassName = "grid-item pix") : (klassName = "grid-item");
-    gridItem.className = klassName;
-    gridItem.innerHTML = value;
-    gridContainer.appendChild(gridItem);
-  }
-  section.appendChild(gridContainer);
-  // let article = document.querySelectorAll("article");
-  let myArticle = document.getElementById("myArticle");
+// components.forEach((element) => {
+//   let section = document.createElement("section");
+//   let gridContainer = document.createElement("div");
+//   gridContainer.className = "grid-container";
+//   for (const [key, value] of Object.entries(element)) {
+//     let gridItem = document.createElement("div");
+//     let klassName;
+//     key == "pix" ? (klassName = "grid-item pix") : (klassName = "grid-item");
+//     gridItem.className = klassName;
+//     gridItem.innerHTML = value;
+//     gridContainer.appendChild(gridItem);
+//   }
+//   section.appendChild(gridContainer);
+//   // let article = document.querySelectorAll("article");
+//   let myArticle = document.getElementById("myArticle");
 
-  myArticle.appendChild(section);
-});
+//   myArticle.appendChild(section);
+// });
 
 const grid_container_nav_item = document.getElementsByClassName(
   "grid_container_nav_item"
