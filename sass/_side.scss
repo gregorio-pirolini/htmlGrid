@@ -1,42 +1,59 @@
 aside {
   display: grid;
   grid: auto/auto;
-  outline: 1px solid black;
-  p,
+
   h4 {
     margin: 0.5em 0;
   }
 
   .grid_container_section {
     display: grid;
-    grid: auto / auto;
+    @include gridOneColumn;
     grid-gap: 0;
     background-color: #2196f3;
-    padding: 0.5em, 0;
-    outline: 1px solid black;
+    padding-top: 0.1em;
+    padding-right: 0.1em;
+    padding-left: 0.1em;
   }
   .grid_container_section_item {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 0;
   }
-  .img {
-    width: calc(100%-50%);
+  .squarePix {
+    background-size: cover;
+    background-position: center;
   }
-
   .fold {
     grid-row-start: 1;
     grid-row-end: auto;
     grid-column-start: 1;
     grid-column-end: auto;
+    background-color: yellow;
   }
 }
 @media (min-width: 320px) {
   aside {
-    grid: auto/auto auto;
+    grid: auto/50% 50%;
+
+    .foldTop {
+      @include foldDouble;
+    }
+  }
+}
+@media (min-width: 568px) {
+  aside {
+    grid: auto/auto;
 
     .fold {
-      grid-area: 1 / span 2;
+      @include foldDouble;
+    }
+    .grid_container_section {
+      grid: auto / auto auto;
+    }
+
+    .foldTop {
+      @include foldNormal;
     }
   }
 }
@@ -44,20 +61,24 @@ aside {
 @media (min-width: 768px) {
   aside {
     grid: auto/auto;
-
+    .grid_container_section {
+      grid: auto / auto;
+    }
     .fold {
-      grid-row-start: 1;
-      grid-row-end: auto;
-      grid-column-start: 1;
-      grid-column-end: auto;
+      @include foldNormal;
     }
   }
 }
 
 @media (min-width: 1024px) {
   aside {
+    grid: auto/auto;
+
     .fold {
-      grid-area: 1 / span 2;
+      @include foldDouble;
+    }
+    .grid_container_section {
+      grid: auto / 30%;
     }
   }
 }
@@ -65,10 +86,13 @@ aside {
   aside {
     grid: auto/auto auto;
     .fold {
-      grid-row-start: 1;
-      grid-row-end: auto;
-      grid-column-start: 1;
-      grid-column-end: auto;
+      @include foldNormal;
+    }
+    .grid_container_section {
+      grid: auto / auto;
+    }
+    .foldTop {
+      @include foldDouble;
     }
   }
 }

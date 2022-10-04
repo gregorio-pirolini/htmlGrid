@@ -135,16 +135,65 @@
         <h2>my Article</h2>
         <p>sections, and sections, sections,..</p>
 
-        <section>
-          <img src="pix/lizzard.jpg" alt="red" srcset="pix/lizzard.jpg" />
+        <section id="bigPix">
+          <div class="grid_container_pix">
+            <div class="grid_container_pix_item">
+              <img src="pix/lizzard.jpg" alt="red" srcset="pix/lizzard.jpg" />
+            </div>
+            <div class="grid_container_pix_item">
+              <p>A lizard on a floor in a horizontal position</p>
+            </div>
+            <div class="grid_container_pix_item">
+              <img
+                width="2000"
+                height="2000"
+                src="pix/lines2000x2000.jpg"
+                alt="test src set"
+                sizes="(max-width: 2000px) 100vw, 2000px"
+                srcset="
+                  pix/lines2000x2000.jpg 2000w,
+                  pix/lines1500x1500.jpg 1500w,
+                  pix/lines1000x1000.jpg 1000w,
+                  pix/lines500x500.jpg    500w,
+                  pix/lines320x320.jpg    320w
+                "
+              />
+            </div>
+            <div class="grid_container_pix_item">
+              <p>★testing src set★</p>
+            </div>
+          </div>
         </section>
-        <section id="myVideos"></section>
-        <section>
-          <h3>Meadows</h3>
-          <p>Sometimes they live in meadows...</p>
+        <section id="pixGallerie">
+        
+          <div class="gallery_grid"></div>
         </section>
 
-        <section id="myPix">
+        <section id="myVideos"></section>
+        <section id="textImage">
+          <h3>pix with texts</h3>
+          <p>https://codepen.io/sassquad/pen/ooLEOa</p>
+         
+          <div id="textImage_grid">
+            <div class="text">Text 1
+            </div>
+            <div class="image">Image 1
+            </div>
+            <div class="text">Text 2
+            </div>
+            <div class="image">Image 2
+            </div>
+            <div class="text">Text 3
+            </div>
+            <div class="image">Image 3
+            </div>
+
+
+          </div>
+
+        </section>
+
+        <section>
           <h3>Woods</h3>
           <p>Often they live in woods...</p>
         </section>
@@ -152,72 +201,38 @@
         <section>
           <h3>favicon</h3>
           <p>https://www.figma.com/community/file/914233657397286062</p>
+          <p>link for favicons</p>
         </section>
-
-        <section>
-          <!-- <table id="myTable">
-            <tr>
-              <td>pix</td>
-              <td>name</td>
-              <td>Anz. d. Leitungen</td>
-              <td>anschließb. Geräte</td>
-              <td>Datentransferrate Mbit/s</td>
-              <td>Geräteerkennung hotp./Neustart</td>
-              <td>Kabel m</td>
-              <td>A/D/O</td>
-              <td>Spannung</td>
-              <td>Strom</td>
-            </tr>
-          </table> -->
-        </section>
-        <!-- <section>
-          <div class="grid_container">
-            <div class="grid_item pix">pix</div>
-            <div class="grid_item">name</div>
-            <div class="grid_item">Anz. d. Leitungen</div>
-            <div class="grid_item">anschließb. Geräte</div>
-            <div class="grid_item">Datentransferrate Mbit/s</div>
-            <div class="grid_item">Geräteerkennung hotp./Neustart</div>
-            <div class="grid_item">Kabel m</div>
-            <div class="grid_item">A/D/O</div>
-            <div class="grid_item">Spannung</div>
-            <div class="grid_item">Strom</div>
-          </div>
-        </section> -->
       </article>
       <aside>
-        <!-- <div class="grid_container_section">
-          <div class="grid_container_section_item">maybe you like too:</h3>
-        </div> -->
-        <div class="grid_container_section">
-          <div class="grid_container_section_item fold">1</div>
-          <div class="grid_container_section_item">2</div>
-          <div class="grid_container_section_item">3</div>
+        <div class="grid_container_section_item foldTop">
+          <h4>May be you like to check out...</h4>
         </div>
         <div class="grid_container_section">
-          <div class="grid_container_section_item fold">1</div>
-          <div class="grid_container_section_item">2</div>
-          <div class="grid_container_section_item">3</div>
-        </div>
-        <div class="grid_container_section">
-          <div class="grid_container_section_item fold">1</div>
-          <div class="grid_container_section_item">2</div>
-          <div class="grid_container_section_item">3</div>
-        </div>
-        <div class="grid_container_section">
-          <div class="grid_container_section_item fold">1</div>
-          <div class="grid_container_section_item">2</div>
-          <div class="grid_container_section_item">3</div>
-        </div>
-        <div class="grid_container_section">
-          <div class="grid_container_section_item fold">1</div>
-          <div class="grid_container_section_item">2</div>
-          <div class="grid_container_section_item">3</div>
-        </div>
-        <div class="grid_container_section">
-          <div class="grid_container_section_item fold">1</div>
-          <div class="grid_container_section_item">2</div>
-          <div class="grid_container_section_item">3</div>
+          <div class="grid_container_section_item fold">
+            <h4>Lorem Ipsum</h4>
+          </div>
+          <div class="grid_container_section_item img">
+            <div
+              class="squarePix"
+              style="background-image: url('pix/test.webp')"
+            >
+              <img src="img/transparent.png" alt="test pix" />
+            </div>
+          </div>
+          <div class="grid_container_section_item">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              ...<!--
+              nisi ut aliquip ex ea commodo consequat
+               Duis aute irure dolor in
+             reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum. -->
+            </p>
+          </div>
         </div>
       </aside>
 

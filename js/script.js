@@ -169,6 +169,54 @@ const videos = [
     Родину`,
   },
 ];
+
+const pixAndText = [
+  {
+    pix: "War-of-the-Worlds.jpg",
+    caption: "War of the Worlds",
+    text: "No one would have believed in the last years of the nineteenth century that this world was being watched keenly and closely by intelligences greater than man's and yet as mortal as his own; that as men busied themselves about their various concerns they were scrutinised and studied, perhaps almost as narrowly as a man with a microscope might scrutinise the transient creatures that swarm and multiply in a drop of water. With infinite complacency men went to and fro over this globe about their little affairs, serene in their assurance of their empire over matter. It is possible that the infusoria under the microscope do the same. No one gave a thought to the older worlds of space as sources of human danger, or thought of them only to dismiss the idea of life upon them as impossible or improbable. It is curious to recall some of the mental habits of those departed days. At most terrestrial men fancied there might be other men upon Mars, perhaps inferior to themselves and ready to welcome a missionary enterprise. Yet across the gulf of space, minds that are to our minds as ours are to those of the beasts that perish, intellects vast and cool and unsympathetic, regarded this earth with envious eyes, and slowly and surely drew their plans against us. And early in the twentieth century came the great disillusionment.",
+    title: "The War of the Worlds",
+    subtitle: "The Coming of the Martians",
+  },
+  {
+    pix: "nephilim.jpg",
+    caption: "nephilim",
+    text: "01010100 01101000 01100101 00100000 01001110 01100101 01110000 01101000 01101001 01101100 01101001 01101101 00100000 01110111 01100101 01110010 01100101 00100000 01101111 01101110 00100000 01110100 01101000 01100101 00100000 01100101 01100001 01110010 01110100 01101000 00100000 01100010 01101111 01110100 01101000 00100000 01101001 01101110 00100000 01110100 01101000 01101111 01110011 01100101 00100000 01100100 01100001 01111001 01110011 00100000 01100001 01101110 01100100 00100000 01100001 01100110 01110100 01100101 01110010 01110111 01100001 01110010 01100100 00101100 00100000 01110111 01101000 01100101 01101110 00100000 01110100 01101000 01100101 00100000 01110011 01101111 01101110 01110011 00100000 01101111 01100110 00100000 01000111 01101111 01100100 00100000 01100011 01100001 01101101 01100101 00100000 01110100 01101111 00100000 01110100 01101000 01100101 00100000 01100100 01100001 01110101 01100111 01101000 01110100 01100101 01110010 01110011 00100000 01101111 01100110 00100000 01101101 01100001 01101110 01101011 01101001 01101110 01100100 00101100 00100000 01110111 01101000 01101111 00100000 01100010 01101111 01110010 01100101 00100000 01100011 01101000 01101001 01101100 01100100 01110010 01100101 01101110 00100000 01110100 01101111 00100000 01110100 01101000 01100101 01101101 00101110 00100000 01010100 01101000 01100101 01111001 00100000 01110111 01100101 01110010 01100101 00100000 01110100 01101000 01100101 00100000 01110000 01101111 01110111 01100101 01110010 01100110 01110101 01101100 00100000 01101101 01100101 01101110 00100000 01101111 01100110 00100000 01101111 01101100 01100100 00101100 00100000 01110100 01101000 01100101 00100000 01100110 01100001 01101101 01101111 01110101 01110011 00100000 01101101 01100101 01101110 00101110",
+    title:
+      "01010111 01101000 01101111 00100000 01000001 01110010 01100101 00100000 01110100 01101000 01100101 00100000 01001110 01100101 01110000 01101000 01101001 01101100 01101001 01101101 00111111",
+    subtitle:
+      "01110011 01110101 01100010 01110100 01101001 01110100 01101100 01100101",
+  },
+  {
+    pix: "Time-Travel.webp",
+    caption: "Time travel",
+    text: `Have you ever made a mistake that you wish you could undo? Correcting past mistakes is one of the reasons we find the concept of time travel so fascinating. As often portrayed in science fiction, with a time machine, nothing is permanent anymore — you can always go back and change it. But is time travel really possible in our universe, or is it just science fiction?
+
+Our modern understanding of time and causality comes from general relativity. Theoretical physicist Albert Einstein’s theory combines space and time into a single entity — “spacetime” — and provides a remarkably intricate explanation of how they both work, at a level unmatched by any other established theory. This theory has existed for more than 100 years and has been experimentally verified to extremely high precision, so physicists are fairly certain it provides an accurate description of the causal structure of our universe.
+
+For decades, physicists have been trying to use general relativity to figure out if time travel is possible. It turns out that you can write down equations that describe time travel and are fully compatible and consistent with relativity. But physics is not mathematics, and equations are meaningless if they do not correspond to anything in reality.`,
+    title: "Time travel may be possible",
+    subtitle:
+      " Time travel and parallel timelines almost always go hand-in-hand in sci-fi, and so must they do in real science",
+  },
+  {
+    pix: "conspiracy.jpg",
+    caption: "conspiracy",
+    text: `Conspiracy theories are hardly a modern affliction: think of the JFK assassination or the long history of UFO sightings. Yet the internet is often said to have ushered in a 'post-truth' era, with social media, in particular, allowing for the spread of viral misinformation.
+
+    Whether or not that's actually true is another matter, and it's a serious one that merits consideration.
+    
+    To date, there is little systematic evidence to suggest that conspiracy theories are increasing in popularity, despite what many journalists, scholars, and policymakers say.
+    
+    That's the conclusion of a new series of surveys conducted in the United States and six European countries. The new study instead suggests conspiracy theories are a "more persistent and ubiquitous feature of human society" than commonly thought.
+    
+    But it's not all bad news. The good news is that it doesn't look like social media or online news outlets are necessarily to blame. While they might spread misinformation, and dangerously so, it seems conspiracy theories are not necessarily attracting more believers than they did in decades gone by.`,
+    title: "Conspiracy",
+    subtitle:
+      "Belief in Conspiracy Theories May Not Be Increasing After All, Surveys Suggest",
+  },
+];
+
 const asideContent = [
   {
     pix: "alienAbduction.jpg",
@@ -177,87 +225,116 @@ const asideContent = [
     title: "Alien abduction",
   },
   {
-    pix: "reptilian.jpeg",
-    caption: "reptilians humans comparaisons",
-    text: "Reptilians – also called reptoids, archons, reptiloids, saurians, or draconians  – are supposed reptilian humanoids, which play a prominent role in fantasy, science fiction, ufology, and conspiracy theories. The idea of reptilians was popularised by David Icke, a conspiracy theorist who claims shapeshifting reptilian aliens control Earth by taking on human form and gaining political power to manipulate human societies. Icke has stated on multiple occasions that many world leaders are, or are possessed by, so-called reptilians.",
-    title: "reptilians humans",
+    pix: "moon.jpg",
+    caption: "Moon landing",
+    text: "Some or all elements of the Apollo program and the associated Moon landings were hoaxes staged by NASA, possibly with the aid of other organizations. The most notable claim is that the six crewed landings (1969–1972) were faked and that twelve Apollo astronauts did not actually walk on the Moon. Various groups and individuals have made",
+    title: "About the moon landing",
   },
   {
-    pix: "ufo.jpg",
-    caption: "Fermi-Paradoxon",
-    text: `Das Fermi-Paradoxon ist eine Bezeichnung für einen Gedankengang des Physikers Enrico Fermi aus dem Jahr 1950. Fermi ging davon aus, dass es extraterrestrische Intelligenz gibt, die technisch hochentwickelte Zivilisationen über Millionen von Jahren aufrechterhalten kann. In dieser Zeitspanne sollte es mittels interstellarer Raumfahrt möglich sein, die gesamte Galaxie zu kolonisieren – und der Wahrscheinlichkeit nach sollte dies bereits geschehen sein. Dass dennoch die Suche nach den Spuren von außerirdischem Leben bisher erfolglos blieb, erschien ihm paradox und als Hinweis darauf, entweder die Annahmen oder die Beobachtungen zu hinterfragen.`,
-    title: "Fermi Paradoxon",
+    pix: "reptilian.jpeg",
+    caption: "Reptilians humans",
+    text: "Reptilians – also called reptoids, archons, reptiloids, saurians, or draconians  – are supposed reptilian humanoids, which play a prominent role in fantasy, science fiction, ufology, and conspiracy theories. The idea of reptilians was popularised by David Icke, a conspiracy theorist who claims shapeshifting reptilian aliens control Earth by taking on human form and gaining political power to manipulate human societies. Icke has stated on multiple occasions that many world leaders are, or are possessed by, so-called reptilians.",
+    title: "Reptilians humans",
+  },
+  {
+    pix: "trepanation.jpeg",
+    caption: "Trepanning",
+    text: `Out of eight skulls with trepanations from the 6th to 8th centuries found in southwestern Germany, seven skulls show clear evidence of healing and survival after trepanation, suggesting that the survival rate of the operations was high and the infection rate was low.`,
+    title: "Is trepanning effective?",
+  },
+  {
+    pix: "flat.jpg",
+    caption: "flat earth map",
+    text: `The flat Earth model is an archaic and scientifically disproven conception of Earth's shape as a plane or disk. Many ancient cultures subscribed to a flat Earth cosmography, including Greece until the classical period (5th century BC), the Bronze and Iron Age civilizations of the Near East until the Hellenistic period (31 BC), and China until the 17th century.`,
+    title: "Flat earth map",
   },
 ];
 
 const pixGallerie = [
   {
-    pix: "ot1.jpg",
+    src: "ot1.jpg",
     name: "name",
-    title: "title",
+    title: "black lines",
     alt: "alt text",
   },
   {
-    pix: "ot1.jpg",
+    src: "pix7.jpg",
+    name: "ターちゃん ジャングルの王者",
+    title: "ターちゃん ジャングルの王者",
+    alt: "ターちゃん ジャングルの王者",
+  },
+  {
+    src: "pix3.gif",
     name: "name",
-    title: "title",
+    title: "!!",
     alt: "alt text",
   },
   {
-    pix: "ot1.jpg",
+    src: "ot2.jpg",
     name: "name",
-    title: "title",
+    title: "3 Stars",
     alt: "alt text",
   },
   {
-    pix: "ot2.jpg",
+    src: "ot3.webp",
     name: "name",
-    title: "title",
+    title: "some lines",
     alt: "alt text",
   },
   {
-    pix: "ot3.webp",
+    src: "ot4.jpg",
     name: "name",
-    title: "title",
+    title: "somes lines with dots",
     alt: "alt text",
   },
   {
-    pix: "ot4.jpg",
+    src: "ot5.jpg",
     name: "name",
-    title: "title",
+    title: "Integrated circuit",
     alt: "alt text",
   },
   {
-    pix: "ot5.jpg",
+    src: "ot6.jpg",
     name: "name",
-    title: "title",
+    title: "01000010 01101001 01101110 01100001 01110010 01111001",
     alt: "alt text",
   },
   {
-    pix: "ot6.jpg",
+    src: "ot7.jpg",
     name: "name",
-    title: "title",
+    title: "Black out",
     alt: "alt text",
   },
   {
-    pix: "ot7.jpg",
+    src: "ot8.jpg",
     name: "name",
-    title: "title",
+    title: "Black out",
     alt: "alt text",
   },
   {
-    pix: "ot8.jpg",
+    src: "pix2.jpeg",
     name: "name",
-    title: "title",
+    title: "Motivation",
     alt: "alt text",
   },
   {
-    pix: "lizzard.jpg",
+    src: "red1920.jpg",
     name: "name",
-    title: "title",
+    title: "red ",
     alt: "alt text",
   },
-  { pix: "red1920.jpg", name: "name", title: "title", alt: "alt text" },
+  {
+    src: "cindy.jpg",
+    name: "name",
+    title: "Cindy Lauper",
+    alt: "alt text",
+  },
+  {
+    src: "clock.jpg",
+    name: "name",
+    title: "the time now",
+    alt: "alt text",
+  },
 ];
 
 const components = [
@@ -319,7 +396,39 @@ const components = [
 //! ██║██║╚██╔╝██║██╔══██║██║   ██║██╔══╝  ╚════██║
 //! ██║██║ ╚═╝ ██║██║  ██║╚██████╔╝███████╗███████║
 //! ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝
-pixGallerie.forEach((element) => {});
+const gallery_grid = document.getElementsByClassName("gallery_grid");
+
+// alert(gallery_grid)
+pixGallerie.forEach((element) => {
+  //https:www.imarketinx.de/artikel/responsive-image-gallery-with-css-grid.html
+  {
+    let gallery_frame = document.createElement("figure");
+    gallery_frame.className = "gallery_frame";
+
+    let gallery_img = document.createElement("img");
+    gallery_img.className = "gallery_img";
+    gallery_img.src = "pix/" + element.src;
+    gallery_img.alt = element.alt;
+    gallery_img.title = element.title;
+
+    let figcaption = document.createElement("figcaption");
+    let text = document.createTextNode(element.title);
+    figcaption.appendChild(text);
+
+    gallery_frame.appendChild(gallery_img);
+    gallery_frame.appendChild(figcaption);
+
+    gallery_grid[0].appendChild(gallery_frame);
+
+    /* <div class="gallery_grid">
+  <figure class="gallery_frame">
+    <img class="gallery_img" src="https://picsum.photos/230/300?random=1" alt="Image form https://picsum.photos" title="Image form https://picsum.photos">
+    <figcaption>Image Title</figcaption>
+  </figure>
+</div> */
+  }
+});
+
 //!Place texts
 //! __________________________  ______________ _________
 //! \__    ___/\_   _____/\   \/  /\__    ___//   _____/
@@ -327,7 +436,30 @@ pixGallerie.forEach((element) => {});
 //!   |    |    |        \ /     \   |    |   /        \
 //!   |____|   /_______  //___/\  \  |____|  /_______  /
 //!                    \/       \_/                  \/
-//texts.forEach((element) => {});
+
+// pix: "Time-Travel.webp",
+// caption: "Time travel",
+// text: `Havent with relativity. But physics is not mathematics, and equations are meaningless if they do not correspond to anything in reality.`,
+// title: "Time travel may be possible",
+// subtitle:
+
+const textImage_grid = document.getElementById("textImage_grid");
+pixAndText.forEach((element) => {
+  let text = document.createElement("div");
+  text.className = "text";
+  let textvalue = document.createTextNode(element.text);
+  text.appendChild(textvalue);
+  textImage_grid.appendChild(text);
+
+  let image = document.createElement("div");
+  image.className = "image";
+  let imageValue = document.createElement("img");
+  imageValue.src = "pix/" + element.pix;
+  imageValue.alt = element.caption;
+
+  image.appendChild(imageValue);
+  textImage_grid.appendChild(image);
+});
 //!Place SIDEBAR
 //!
 // pix: "alienAbduction.jpg",
@@ -362,11 +494,17 @@ asideContent.forEach((element) => {
   grid_container_section.appendChild(grid_container_section_item1);
 
   //pix
-  let pix = document.createElement("img");
-  pix.src = "pix/" + element.pix;
-  pix.alt = element.caption;
+  let squarePix = document.createElement("div");
+  squarePix.className = "squarePix";
 
-  grid_container_section_item2.appendChild(pix);
+  let pix = document.createElement("img");
+  let url = "pix/" + element.pix;
+  pix.src = "img/transparent.png";
+  pix.alt = element.caption;
+  squarePix.style.backgroundImage = "url('" + url + "')";
+  squarePix.appendChild(pix);
+  grid_container_section_item2.appendChild(squarePix);
+
   grid_container_section.appendChild(grid_container_section_item2);
 
   let p = document.createElement("p");
@@ -531,9 +669,15 @@ function onYouTubeIframeAPIReady(event) {
   console.log("onYouTubeIframeAPIReady!!!");
   if (typeof event == "undefined") {
     console.log("why doe it load before click??");
+
     return;
   }
-  console.log("onYouTubeIframeAPIRead");
+  console.log("...........onYouTubeIframeAPIRead");
+
+  //stop video if playing
+
+  // put all pictures back
+
   let dataId = event.currentTarget.getAttribute("data-src");
   let dataNumber = event.currentTarget.getAttribute("data-number");
   let ids = event.currentTarget.id;
@@ -578,5 +722,6 @@ function onPlayerStateChange(event) {
   }
 }
 function stopVideo() {
+  console.log("player stop");
   player.stopVideo();
 }

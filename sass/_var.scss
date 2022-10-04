@@ -1,0 +1,12 @@
+@mixin gridOneColumn {
+  grid: auto / auto;
+}
+@mixin foldDouble {
+  grid-area: 1 / span 2;
+}
+@mixin foldNormal {
+  grid-row-start: 1;
+  grid-row-end: auto;
+  grid-column-start: 1;
+  grid-column-end: auto;
+}

@@ -1,14 +1,16 @@
+@import "var";
 @import "nav";
 @import "fonts";
 @import "side";
+@import "pix";
+@import "video";
+@import "textImage";
 body {
   color: black;
 }
 
-table,
-tr,
-td {
-  border: 1px solid black;
+p {
+  margin: 0.5em 0;
 }
 
 #wrapper {
@@ -16,18 +18,6 @@ td {
   margin: 0 auto;
 }
 
-header {
-  width: 100%;
-}
-
-section {
-  .videoFigure {
-    margin-bottom: 1em;
-  }
-  img {
-    margin-bottom: 1em;
-  }
-}
 article {
   width: 100%;
 }
@@ -39,77 +29,6 @@ aside {
 footer {
   width: 100%;
   display: grid;
-}
-
-.video43 {
-  padding-bottom: 75%;
-  .clickMe {
-    padding-bottom: 75%;
-    img {
-      pointer-events: none;
-    }
-  }
-}
-.video169 {
-  padding-bottom: 56.25%;
-  .clickMe {
-    padding-bottom: 56.25%;
-    img {
-      pointer-events: none;
-    }
-  }
-}
-.video43,
-.video169 {
-  iframe {
-    display: none;
-  }
-}
-.clickMe {
-  background-size: cover;
-  img {
-    position: absolute;
-    left: 50%;
-    margin-left: -32px;
-    top: 50%;
-    margin-top: -23px;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-}
-
-.grid_containerVideos {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-gap: 10px;
-  background-color: #2196f3;
-  padding: 10px;
-}
-
-.videoItem2 {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-}
-.videoFigure,
-.clickMe {
-  height: 0;
-
-  position: relative;
-  max-width: 100%;
-  background-color: pink;
-}
-
-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
 }
 
 #info {
@@ -202,20 +121,6 @@ iframe {
       content: "Laptop displays 1366px and up";
     }
   }
-
-  // .video169 {
-  //   padding-bottom: 360px;
-  // }
-  // .video43 {
-  //   padding-bottom: 480px;
-  // }
-
-  .grid_containerVideos {
-    grid-template-columns: 50% 50%;
-    grid-gap: 0px;
-
-    padding: 0px;
-  }
 }
 
 // Extra large devices (Desktop displays, 1680px and up)
@@ -237,6 +142,11 @@ iframe {
   }
 }
 
+// #myVideos {
+//   display: none;
+// }
+#pixGallerie,
+#bigPix,
 #myVideos {
   display: none;
 }
