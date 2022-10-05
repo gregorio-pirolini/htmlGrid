@@ -442,23 +442,39 @@ pixGallerie.forEach((element) => {
 // text: `Havent with relativity. But physics is not mathematics, and equations are meaningless if they do not correspond to anything in reality.`,
 // title: "Time travel may be possible",
 // subtitle:
-
+const multiLine = (str) => {
+  return str;
+};
 const textImage_grid = document.getElementById("textImage_grid");
 pixAndText.forEach((element) => {
   let text = document.createElement("div");
   text.className = "text";
-  let textvalue = document.createTextNode(element.text);
-  text.appendChild(textvalue);
-  textImage_grid.appendChild(text);
+  let p = document.createElement("p");
+  let textvalue = document.createTextNode(multiLine(element.text));
+
+  let h4 = document.createElement("h4");
+  let h4value = document.createTextNode(element.title);
+
+  let h5 = document.createElement("h5");
+  let h5value = document.createTextNode(element.subtitle);
+  h4.appendChild(h4value);
+  h5.appendChild(h5value);
 
   let image = document.createElement("div");
   image.className = "image";
   let imageValue = document.createElement("img");
   imageValue.src = "pix/" + element.pix;
   imageValue.alt = element.caption;
+  text.appendChild(imageValue);
+  p.appendChild(textvalue);
 
-  image.appendChild(imageValue);
-  textImage_grid.appendChild(image);
+  text.appendChild(p);
+
+  let image2 = imageValue.cloneNode(true);
+  textImage_grid.appendChild(image2);
+  textImage_grid.appendChild(h4);
+  textImage_grid.appendChild(h5);
+  textImage_grid.appendChild(text);
 });
 //!Place SIDEBAR
 //!
