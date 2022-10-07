@@ -66,16 +66,7 @@ const videos = [
     緑色に光る
     迷って Cat's Eye
     magic play is dancing
-    月明かり浴びて
-    we get you...you...you...you...
-    mysterious girl
-    見つめるCat's Eye
-    magic play is dancing
-    緑色に光る
-    妖しく Cat's Eye
-    magic play is dancing
-    月明かり浴びて
-    we get you...you...you...you...`,
+    月明かり浴びて`,
   },
 
   {
@@ -172,15 +163,24 @@ const videos = [
 
 const pixAndText = [
   {
-    pix: "War-of-the-Worlds.jpg",
-    caption: "War of the Worlds",
+    pix: [
+      { src: "War-of-the-Worlds.jpg", caption: "War of the Worlds" },
+      { src: "War-Of-The-Worlds-Featured.jpg", caption: "War of the Worlds" },
+      { src: "5b56e5fc0b6d0.webp", caption: "War of the Worlds" },
+    ],
     text: "No one would have believed in the last years of the nineteenth century that this world was being watched keenly and closely by intelligences greater than man's and yet as mortal as his own; that as men busied themselves about their various concerns they were scrutinised and studied, perhaps almost as narrowly as a man with a microscope might scrutinise the transient creatures that swarm and multiply in a drop of water. With infinite complacency men went to and fro over this globe about their little affairs, serene in their assurance of their empire over matter. It is possible that the infusoria under the microscope do the same. No one gave a thought to the older worlds of space as sources of human danger, or thought of them only to dismiss the idea of life upon them as impossible or improbable. It is curious to recall some of the mental habits of those departed days. At most terrestrial men fancied there might be other men upon Mars, perhaps inferior to themselves and ready to welcome a missionary enterprise. Yet across the gulf of space, minds that are to our minds as ours are to those of the beasts that perish, intellects vast and cool and unsympathetic, regarded this earth with envious eyes, and slowly and surely drew their plans against us. And early in the twentieth century came the great disillusionment.",
     title: "The War of the Worlds",
     subtitle: "The Coming of the Martians",
   },
   {
-    pix: "nephilim.jpg",
-    caption: "nephilim",
+    pix: [
+      { src: "nephilim.jpg", caption: "nephilim" },
+      { src: "Download.jfif", caption: "nephilim" },
+      {
+        src: "Witch-Maw-Nephilim-Illustration-by-Greg-Staples-1024x759.webp",
+        caption: "nephilim",
+      },
+    ],
     text: "01010100 01101000 01100101 00100000 01001110 01100101 01110000 01101000 01101001 01101100 01101001 01101101 00100000 01110111 01100101 01110010 01100101 00100000 01101111 01101110 00100000 01110100 01101000 01100101 00100000 01100101 01100001 01110010 01110100 01101000 00100000 01100010 01101111 01110100 01101000 00100000 01101001 01101110 00100000 01110100 01101000 01101111 01110011 01100101 00100000 01100100 01100001 01111001 01110011 00100000 01100001 01101110 01100100 00100000 01100001 01100110 01110100 01100101 01110010 01110111 01100001 01110010 01100100 00101100 00100000 01110111 01101000 01100101 01101110 00100000 01110100 01101000 01100101 00100000 01110011 01101111 01101110 01110011 00100000 01101111 01100110 00100000 01000111 01101111 01100100 00100000 01100011 01100001 01101101 01100101 00100000 01110100 01101111 00100000 01110100 01101000 01100101 00100000 01100100 01100001 01110101 01100111 01101000 01110100 01100101 01110010 01110011 00100000 01101111 01100110 00100000 01101101 01100001 01101110 01101011 01101001 01101110 01100100 00101100 00100000 01110111 01101000 01101111 00100000 01100010 01101111 01110010 01100101 00100000 01100011 01101000 01101001 01101100 01100100 01110010 01100101 01101110 00100000 01110100 01101111 00100000 01110100 01101000 01100101 01101101 00101110 00100000 01010100 01101000 01100101 01111001 00100000 01110111 01100101 01110010 01100101 00100000 01110100 01101000 01100101 00100000 01110000 01101111 01110111 01100101 01110010 01100110 01110101 01101100 00100000 01101101 01100101 01101110 00100000 01101111 01100110 00100000 01101111 01101100 01100100 00101100 00100000 01110100 01101000 01100101 00100000 01100110 01100001 01101101 01101111 01110101 01110011 00100000 01101101 01100101 01101110 00101110",
     title:
       "01010111 01101000 01101111 00100000 01000001 01110010 01100101 00100000 01110100 01101000 01100101 00100000 01001110 01100101 01110000 01101000 01101001 01101100 01101001 01101101 00111111",
@@ -188,8 +188,14 @@ const pixAndText = [
       "01110011 01110101 01100010 01110100 01101001 01110100 01101100 01100101",
   },
   {
-    pix: "Time-Travel.webp",
-    caption: "Time travel",
+    pix: [
+      { src: "Time-Travel.webp", caption: "Time travel" },
+      { src: "time-travel-clock-ellipse.webp", caption: "Time travel" },
+      {
+        src: "time-travel-queries-art-JoeRoberts-1.avif",
+        caption: "Time travel",
+      },
+    ],
     text: `Have you ever made a mistake that you wish you could undo? Correcting past mistakes is one of the reasons we find the concept of time travel so fascinating. As often portrayed in science fiction, with a time machine, nothing is permanent anymore — you can always go back and change it. But is time travel really possible in our universe, or is it just science fiction?
 
 Our modern understanding of time and causality comes from general relativity. Theoretical physicist Albert Einstein’s theory combines space and time into a single entity — “spacetime” — and provides a remarkably intricate explanation of how they both work, at a level unmatched by any other established theory. This theory has existed for more than 100 years and has been experimentally verified to extremely high precision, so physicists are fairly certain it provides an accurate description of the causal structure of our universe.
@@ -200,8 +206,12 @@ For decades, physicists have been trying to use general relativity to figure out
       " Time travel and parallel timelines almost always go hand-in-hand in sci-fi, and so must they do in real science",
   },
   {
-    pix: "conspiracy.jpg",
-    caption: "conspiracy",
+    pix: [
+      { src: "conspiracy.jpg", caption: "conspiracy" },
+      { src: "p04wprnx.jpg", caption: "conspiracy" },
+      { src: "GSN0221_014a_6242_600.jpg", caption: "conspiracy" },
+    ],
+
     text: `Conspiracy theories are hardly a modern affliction: think of the JFK assassination or the long history of UFO sightings. Yet the internet is often said to have ushered in a 'post-truth' era, with social media, in particular, allowing for the spread of viral misinformation.
 
     Whether or not that's actually true is another matter, and it's a serious one that merits consideration.
@@ -437,8 +447,13 @@ pixGallerie.forEach((element) => {
 //!   |____|   /_______  //___/\  \  |____|  /_______  /
 //!                    \/       \_/                  \/
 
-// pix: "Time-Travel.webp",
-// caption: "Time travel",
+// pix: [
+//   { src: "Time-Travel.webp", caption: "Time travel" },
+//   { src: "time-travel-clock-ellipse.webp", caption: "Time travel" },
+//   {
+//     src: "time-travel-queries-art-JoeRoberts-1.avif",
+//     caption: "Time travel",
+//   },
 // text: `Havent with relativity. But physics is not mathematics, and equations are meaningless if they do not correspond to anything in reality.`,
 // title: "Time travel may be possible",
 // subtitle:
@@ -463,15 +478,25 @@ pixAndText.forEach((element) => {
   let image = document.createElement("div");
   image.className = "image";
   let imageValue = document.createElement("img");
-  imageValue.src = "pix/" + element.pix;
-  imageValue.alt = element.caption;
-  text.appendChild(imageValue);
-  p.appendChild(textvalue);
+  imageValue.src = "pix/" + element.pix[0].src;
+  imageValue.alt = element.pix[0].caption;
+  image.appendChild(imageValue);
 
+  textImage_grid.appendChild(image);
+
+  // p.appendChild(image);
+  let imageValue2 = imageValue.cloneNode(true);
+  imageValue2.src = "pix/" + element.pix[1].src;
+  imageValue2.alt = element.pix[1].caption;
+  let imageValue3 = imageValue.cloneNode(true);
+  imageValue3.src = "pix/" + element.pix[2].src;
+  imageValue3.alt = element.pix[2].caption;
+
+  p.appendChild(imageValue2);
+  p.appendChild(imageValue3);
+  p.appendChild(textvalue);
   text.appendChild(p);
 
-  let image2 = imageValue.cloneNode(true);
-  textImage_grid.appendChild(image2);
   textImage_grid.appendChild(h4);
   textImage_grid.appendChild(h5);
   textImage_grid.appendChild(text);

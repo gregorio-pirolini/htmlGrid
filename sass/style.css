@@ -7,7 +7,7 @@ nav a {
   font-family: header;
 }
 nav .item2 {
-  grid-column: 1/span 2;
+  grid-column: 1 / span 2;
   font-size: 1.5em;
 }
 nav .grid_container_nav {
@@ -68,7 +68,10 @@ nav #smallMenu img:hover {
 @font-face {
   font-family: "header";
   src: url("../fonts/baronKuffner.eot");
-  src: url("../fonts/baronKuffner.eot?#iefix") format("embedded-opentype"), url("../fonts/baronKuffner.woff") format("woff"), url("../fonts/baronKuffner.ttf") format("truetype"), url("../fonts/baronKuffner.svg#icomoon") format("svg");
+  src: url("../fonts/baronKuffner.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/baronKuffner.woff") format("woff"),
+    url("../fonts/baronKuffner.ttf") format("truetype"),
+    url("../fonts/baronKuffner.svg#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -107,7 +110,7 @@ aside .fold {
     grid: auto/50% 50%;
   }
   aside .foldTop {
-    grid-area: 1/span 2;
+    grid-area: 1 / span 2;
   }
 }
 @media (min-width: 568px) {
@@ -115,7 +118,7 @@ aside .fold {
     grid: auto/auto;
   }
   aside .fold {
-    grid-area: 1/span 2;
+    grid-area: 1 / span 2;
   }
   aside .grid_container_section {
     grid: auto/auto auto;
@@ -146,7 +149,7 @@ aside .fold {
     grid: auto/auto;
   }
   aside .fold {
-    grid-area: 1/span 2;
+    grid-area: 1 / span 2;
   }
   aside .grid_container_section {
     grid: auto/30%;
@@ -166,7 +169,7 @@ aside .fold {
     grid: auto/auto;
   }
   aside .foldTop {
-    grid-area: 1/span 2;
+    grid-area: 1 / span 2;
   }
 }
 /* First the Grid */
@@ -194,7 +197,7 @@ aside .fold {
   max-width: 100%;
   height: auto;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: opacity 0.25s ease-in-out;
 }
 
@@ -284,17 +287,48 @@ iframe {
   border: none;
 }
 
+.text img {
+  float: left;
+  margin-right: 10px;
+  margin: bottom 5px;
+  border: 1px solid black;
+  padding: 2px;
+  width: calc(47.5% - 5px);
+  margin-bottom: 5px;
+}
+.text img:nth-child(2) {
+  margin-right: 0px;
+}
+
+.text {
+  margin-bottom: 5em;
+}
+
 #textImage_grid {
-  display: grid;
-  padding: 2rem;
-  grid-template-columns: 100%;
-  gap: 1rem;
-  align-items: center;
   max-width: 1000px;
   margin: 0 auto;
   font: 500 100%/1.5 system-ui;
 }
 
+.image {
+  text-align: center;
+}
+
+@media (min-width: 568px) {
+  .text img {
+    float: left;
+    margin-right: 10px;
+    margin: bottom 5px;
+    border: 1px solid black;
+    padding: 2px;
+    width: 50%;
+    margin-bottom: 5px;
+    margin-bottom: 5px;
+  }
+  .text img:nth-child(2) {
+    margin-right: 10px;
+  }
+}
 body {
   color: black;
 }
@@ -338,7 +372,7 @@ footer {
   grid-template-columns: 25% 25% 25% 25%;
   background-color: #2196f3;
   -moz-column-gap: 0px;
-       column-gap: 0px;
+  column-gap: 0px;
   row-gap: 0px;
   margin-bottom: 1em;
 }
@@ -375,8 +409,9 @@ footer {
     margin: 0 auto;
   }
   article {
-    width: 70%;
+    width: calc(70% - 0.25em);
     float: left;
+    border-right: 0.25em solid blue;
   }
   aside {
     width: 30%;
@@ -403,8 +438,8 @@ footer {
     content: "Desktop displays 1920px and up";
   }
 }
-#pixGallerie,
+/* #pixGallerie,
 #bigPix,
 #myVideos {
   display: none;
-}/*# sourceMappingURL=style.css.map */
+}# sourceMappingURL=style.css.map */

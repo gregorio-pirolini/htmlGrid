@@ -96,8 +96,10 @@ footer {
   }
 
   article {
-    width: 70%;
+    width: calc(70% - 0.25em);
     float: left;
+
+    border-right: 0.25em solid blue;
   }
 
   aside {
