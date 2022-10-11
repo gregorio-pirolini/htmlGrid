@@ -640,7 +640,7 @@ let sectionPaddingTop = () => {
     section[key].style.paddingTop = headerHeight + "px";
   });
 
-  console.log(headerHeight + "px");
+  console.log(headerHeight + "px!!");
 };
 
 let toogleSmallMenu = (state) => {
@@ -652,9 +652,8 @@ let toogleSmallMenu = (state) => {
   });
 };
 
-let hideMenu2 = () =>
-{
-  if (displayBig==true) return;
+let hideMenu2 = () => {
+  if (displayBig == true) return;
   Object.keys(item2).forEach((key) => {
     item2[key].style.display = "none";
   });
@@ -674,17 +673,13 @@ console.log("");
 console.log("info: " + document.getElementById("info").style.color);
 
 let isdisplayBig = () => {
- let testDisplay =
-    smallMenu.currentStyle
-      ? smallMenu.currentStyle["display"]
-      : window.getComputedStyle
-      ? window.getComputedStyle(smallMenu, null).getPropertyValue("display")
-      : null
- 
+  let testDisplay = smallMenu.currentStyle
+    ? smallMenu.currentStyle["display"]
+    : window.getComputedStyle
+    ? window.getComputedStyle(smallMenu, null).getPropertyValue("display")
+    : null;
 
-      testDisplay == "none"
-    ? (displayBig = true)
-    : (displayBig = false);
+  testDisplay == "none" ? (displayBig = true) : (displayBig = false);
 
   console.log("displayBig is " + displayBig);
 
