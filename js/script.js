@@ -612,24 +612,6 @@ videos.forEach((element) => {
 //!  \___\___/|_| |_| |_| .__/ \___/|_| |_|\___|_| |_|\__|___/
 //!                     | |
 //!                     |_|
-// components.forEach((element) => {
-//   let section = document.createElement("section");
-//   let gridContainer = document.createElement("div");
-//   gridContainer.className = "grid-container";
-//   for (const [key, value] of Object.entries(element)) {
-//     let gridItem = document.createElement("div");
-//     let klassName;
-//     key == "pix" ? (klassName = "grid-item pix") : (klassName = "grid-item");
-//     gridItem.className = klassName;
-//     gridItem.innerHTML = value;
-//     gridContainer.appendChild(gridItem);
-//   }
-//   section.appendChild(gridContainer);
-//   // let article = document.querySelectorAll("article");
-//   let myArticle = document.getElementById("myArticle");
-
-//   myArticle.appendChild(section);
-// });
 
 const grid_container_nav_item = document.getElementsByClassName(
   "grid_container_nav_item"
@@ -648,9 +630,21 @@ let updateSmallMenu = (e) => {
 //!   / /_/ / / / __ \/ ___/ __/ / __ \/ __ \/ ___/
 //!  / __/ /_/ / / / / /__/ /_/ / /_/ / / / (__  )
 //! /_/  \__,_/_/ /_/\___/\__/_/\____/_/ /_/____/
+const section = document.getElementsByTagName("section");
+let sectionPaddingTop = () => {
+  let headerEl = document.getElementsByTagName("header")[0];
+  let headerHeight = headerEl.offsetHeight;
+
+  // set margin-top to <form> depending on <header> height
+  Object.keys(section).forEach((key) => {
+    section[key].style.paddingTop = headerHeight + "px";
+  });
+
+  console.log(headerHeight + "px");
+};
 
 let toogleSmallMenu = (state) => {
-  console.log("toogleSmallMenu " + state);
+  console.log("toogleSmallMenu:......... " + state);
   Object.keys(grid_container_nav_item).forEach((key) => {
     if (key > 1) {
       grid_container_nav_item[key].style.display = state;
@@ -658,14 +652,43 @@ let toogleSmallMenu = (state) => {
   });
 };
 
+let hideMenu2 = () =>
+{
+  if (displayBig==true) return;
+  Object.keys(item2).forEach((key) => {
+    item2[key].style.display = "none";
+  });
+};
+
 let toogleSmallMenuCheck = () => {
   console.log("i have been clicked");
 
   grid_container_nav_item[2].style.display == "none"
-    ? toogleSmallMenu("block")
+    ? toogleSmallMenu("grid")
     : toogleSmallMenu("none");
 
   console.log(grid_container_nav_item[2].style.display);
+};
+console.log("info: " + document.getElementById("info").id);
+console.log("");
+console.log("info: " + document.getElementById("info").style.color);
+
+let isdisplayBig = () => {
+ let testDisplay =
+    smallMenu.currentStyle
+      ? smallMenu.currentStyle["display"]
+      : window.getComputedStyle
+      ? window.getComputedStyle(smallMenu, null).getPropertyValue("display")
+      : null
+ 
+
+      testDisplay == "none"
+    ? (displayBig = true)
+    : (displayBig = false);
+
+  console.log("displayBig is " + displayBig);
+
+  displayBig == true ? toogleSmallMenu("grid") : toogleSmallMenu("none");
 };
 
 //! events                     __
@@ -675,10 +698,27 @@ let toogleSmallMenuCheck = () => {
 //!  \___  >\_/  \___  >___|  /__| /____  >
 //!      \/          \/     \/          \/
 
+onload = (event) => {
+  console.log("loading");
+  sectionPaddingTop();
+  isdisplayBig();
+};
+onresize = (event) => {
+  console.log("resising");
+  sectionPaddingTop();
+  isdisplayBig();
+};
+
+let displayBig = false; //we r on small screen
+
 const smallMenu = document.getElementById("smallMenu");
+
+console.log(smallMenuName.style);
+
 smallMenu.addEventListener("click", toogleSmallMenuCheck);
 Object.keys(item2).forEach((key) => {
   item2[key].addEventListener("click", updateSmallMenu);
+  item2[key].addEventListener("click", hideMenu2);
 });
 
 const clickMe = document.getElementsByClassName("clickMe");
